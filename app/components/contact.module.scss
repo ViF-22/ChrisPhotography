@@ -4,15 +4,19 @@
   position: relative;
   color: white;
   display: flex;
-  justify-content: center;
+
+  justify-content: space-between;
   align-items: center;
+  padding: 0 3rem;
 
   h3 {
     font-size: 1.5rem;
   }
   .sm {
+    position: relative;
     display: flex;
-    padding-left: 10rem;
+    flex-wrap: wrap;
+    right: 7rem;
     gap: 1rem;
     font-size: 1.5rem;
     color: white;
@@ -28,12 +32,24 @@
 
       .svgIcon {
         position: absolute;
+
+        top: -8px;
+        left: 0;
       }
       &:hover {
         font-size: 1.8rem;
         color: bisque;
         bottom: 5px;
       }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    flex-direction: row;
+    gap: 7rem;
+
+    .sm {
+      right: 0;
     }
   }
 }
