@@ -1,0 +1,39 @@
+.contact {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  .sm {
+    display: flex;
+    padding-left: 10rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: white;
+
+    a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+      position: relative;
+
+      display: flex;
+      margin: 1rem;
+
+      .svgIcon {
+        position: absolute;
+      }
+      &:hover {
+        font-size: 1.8rem;
+        color: bisque;
+        bottom: 5px;
+      }
+    }
+  }
+}

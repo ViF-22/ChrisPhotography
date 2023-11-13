@@ -1,0 +1,57 @@
+.lesson {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  height: 60vh;
+  position: relative;
+
+  margin: 0 2rem 10rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  .innerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+  }
+
+  img {
+    position: absolute;
+    filter: blur(1.5px);
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 80;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+  p {
+    font-size: 1rem;
+    color: bisque;
+  }
+  a {
+    display: flex;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 1rem 4.75rem;
+    background-color: rgb(36, 195, 105);
+    color: black;
+    border-radius: 3rem;
+    align-self: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
